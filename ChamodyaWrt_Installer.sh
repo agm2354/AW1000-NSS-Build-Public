@@ -17,7 +17,7 @@ sleep 1
 BOARD_NAME=$(ubus call system board | jsonfilter -e '@.board_name')
 
 # Print result
-if [ "$BOARD_NAME" = "arcadyan,aw1000" ]; then
+if [ "$BOARD_NAME" = "qcom,ipq8074-ap-hk09" ]; then
     echo "Device Model - $BOARD_NAME"
 else
     echo "Unsupported Device. This firmware installation only supports Arcadyan AW1000."
